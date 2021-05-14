@@ -51,7 +51,13 @@ values('Michael', 'Jordan', '3336669991', 'mjordan@email.com'),
 ('Michael', 'Caine', '1113335556', 'mcaine@email.com'),
 ('Anne', 'Hathaway', '1113332224', 'ahathaway@email.com'),
 ('Danijela', 'Martinoviæ', '7778886669', 'dmartinovic@email.com'),
-('Petar', 'Grašo', '6665554443', 'pgraso@email.com');
+('Raymond', 'Reddington', '1122332211', 'rred@email.com')
+('Elizabeth', 'Keen', '1111122222', 'ekeen@email.com')
+('Luka', 'Modric', '8768768765', 'lmodric@email.com')
+('Ivan', 'Rakitic', '2102102105', 'irakitic@email.com')
+('Juergen', 'Klopp', '1010101010', 'najboljitrener@email.com')
+('Diogo', 'Jota', 'JOTA111111', 'djota@email.com')
+('Bobby', 'Firmino', 'FIRMINO777', 'Rfirmino@email.com');
 
 insert into zaposlenik(osoba, iban)
 values(5,'HR11 2222 3333 4444 55'),(6, 'HR11 3333 4444 5555 66');
@@ -67,7 +73,7 @@ values(2,2,1),
 
 update osoba set email='petargraso@gmail.com' where prezime='Grašo';
 
-select * from osoba where prezime='Grašo';
+
 
 
 
