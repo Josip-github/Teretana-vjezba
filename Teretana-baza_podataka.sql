@@ -73,6 +73,10 @@ values(2,2,1),
 
 update osoba set email='petargraso@gmail.com' where prezime='Grašo';
 
+delete from osoba where ime='Elizabeth';
+
+select * from osoba;
+
 
 
 
