@@ -32,6 +32,7 @@ create table clanarina(
 	sifra int not null primary key auto_increment,
 	smjer int,
 	polaznik int,
+	mjesec datetime,
 	uplata boolean not null
 );
 
@@ -43,14 +44,14 @@ alter table clanarina add foreign key (smjer) references smjer(sifra);
 alter table clanarina add foreign key (polaznik) references polaznik(sifra);
 
 insert into smjer(naziv, cijena, trajanje)
-values('Kardio', 49.99, 30),('Leða/trbuh',49.99, 30),('Gornji dio tijela',59.99,30),('Noge',39.99,30);
+values('Kardio', 49.99, 30),('Leï¿½a/trbuh',49.99, 30),('Gornji dio tijela',59.99,30),('Noge',39.99,30);
 
 insert into osoba(ime, prezime, oib, email)
 values('Michael', 'Jordan', '3336669991', 'mjordan@email.com'),
 ('Heath', 'Ledger', '2224446667', 'hledger@email.com'),
 ('Michael', 'Caine', '1113335556', 'mcaine@email.com'),
 ('Anne', 'Hathaway', '1113332224', 'ahathaway@email.com'),
-('Danijela', 'Martinoviæ', '7778886669', 'dmartinovic@email.com'),
+('Danijela', 'Martinoviï¿½', '7778886669', 'dmartinovic@email.com'),
 ('Raymond', 'Reddington', '1122332211', 'rred@email.com'),
 ('Elizabeth', 'Keen', '1111122222', 'ekeen@email.com'),
 ('Luka', 'Modric', '8768768765', 'lmodric@email.com'),
@@ -71,7 +72,7 @@ values(2,2,1),
 (1,4,0),
 (3,1,1);
 
-update osoba set email='petargraso@gmail.com' where prezime='Grašo';
+update osoba set email='petargraso@gmail.com' where prezime='Graï¿½o';
 
 delete from osoba where ime='Elizabeth';
 
